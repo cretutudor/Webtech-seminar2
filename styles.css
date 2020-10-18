@@ -55,15 +55,15 @@ body{
     margin-bottom: 30px;
   }
   
-.color-choose div {
+.type-choose div {
     display: inline-block;
 }
   
-.color-choose input[type="radio"] {
+.type-choose input[type="radio"] {
     display: none;
 }
   
-.color-choose input[type="radio"] + label span {
+.type-choose input[type="radio"] + label span {
     display: inline-block;
     width: 40px;
     height: 40px;
@@ -73,36 +73,33 @@ body{
     border-radius: 50%;
 }
   
-.color-choose input[type="radio"] + label span {
+.type-choose input[type="radio"] + label span {
     border: 2px solid #FFFFFF;
     box-shadow: 0 1px 3px 0 rgba(0,0,0,0.33);
 }
   
-.color-choose input[type="radio"]#green + label span {
+.type-choose input[type="radio"]#green + label span {
     background-color:darkolivegreen;
 }
-.color-choose input[type="radio"]#gold + label span {
+.type-choose input[type="radio"]#gold + label span {
     background-color:lightsalmon;
 }
-.color-choose input[type="radio"]#silver + label span {
+.type-choose input[type="radio"]#silver + label span {
     background-color:silver;
 }
-.color-choose input[type="radio"]#grey + label span {
-    background-color: grey;
-}
   
-.color-choose input[type="radio"]:checked + label span {
+.type-choose input[type="radio"]:checked + label span {
     background-image: url(assets/check-icn.svg);
     background-repeat: no-repeat;
     background-position: center;
 }
   
-/*Memory size buttons*/
-.memsize-choose {
+/*Club pick buttons*/
+.club-choose {
     margin-bottom: 20px;
 }
   
-.memsize-choose button {
+.club-choose button {
     border: 2px solid #E1E8EE;
     border-radius: 6px;
     padding: 13px 20px;
@@ -113,9 +110,9 @@ body{
     transition: all .5s;
 }
   
-.memsize-choose button:hover,
-.memsize-choose button:active,
-.memsize-choose button:focus {
+.club-choose button:hover,
+.club-choose button:active,
+.club-choose button:focus {
     border: 2px solid #86939E;
     outline: none;
 }
@@ -190,7 +187,7 @@ body{
       margin-top: 60px;
     }
 
-    .product-color{
+    .product-type{
         max-width:260px;
         margin-left:auto;
         margin-right:auto;
