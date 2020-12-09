@@ -13,7 +13,7 @@
 
     <script>
         //Functia de schimbare a tipului kit-ului
-        let club;
+        let club = " ";
         function changeKit(club, type) {
             var imageElement = document.getElementById('product-image');
             var imageName;
@@ -30,6 +30,9 @@
                     break;
             }
             imageElement.src = "kit images/" + imageName + "_" + type +".png";
+            if(club === " "){
+                imageElement.src = "kit images/pl.png";
+            }
             var titleElement = document.getElementById('type-version');
             titleElement.innerText = capitalize(type);
         }
